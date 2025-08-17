@@ -1,0 +1,170 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Products</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f8f8f8;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 1rem 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-left: 2rem;
+            padding-right: 2rem;
+        }
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin-left: 2rem;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav a:hover {
+            color: #ff9800;
+        }
+        main {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 2rem;
+            font-size: 2.2rem;
+            color: #333;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+            padding: 1.5rem 1rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: box-shadow 0.2s;
+        }
+        .product-card:hover {
+            box-shadow: 0 4px 16px rgba(0,0,0,0.12);
+        }
+        .product-image {
+            width: 120px;
+            height: 120px;
+            background: #e0e0e0;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 2rem;
+            color: #bbb;
+        }
+        .product-name {
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #222;
+        }
+        .product-price {
+            color: #ff9800;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+        .add-to-cart {
+            background: #ff9800;
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1.5rem;
+            border-radius: 4px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+        .add-to-cart:hover {
+            background: #e68900;
+        }
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                padding-left: 1rem;
+                padding-right: 1rem;
+            }
+            nav {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">ShopLogo</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a href="cart.html">Cart</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <h1>All Products</h1>
+        <div class="product-grid">
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product One</div>
+                <div class="product-price">$19.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product Two</div>
+                <div class="product-price">$24.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product Three</div>
+                <div class="product-price">$14.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product Four</div>
+                <div class="product-price">$39.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product Five</div>
+                <div class="product-price">$29.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <div class="product-image">IMG</div>
+                <div class="product-name">Product Six</div>
+                <div class="product-price">$9.99</div>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

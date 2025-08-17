@@ -1,0 +1,177 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clothing Sphere</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #fafafa;
+        }
+        header {
+            background: #222;
+            color: #fff;
+            padding: 20px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .logo {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-left: 40px;
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 30px;
+        }
+        nav ul li {
+            display: inline;
+        }
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.2s;
+        }
+        nav ul li a:hover {
+            color: #ffd700;
+        }
+        .hero {
+            background: linear-gradient(90deg, #e3ffe6 0%, #f5f7fa 100%);
+            padding: 60px 20px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.3rem;
+            color: #555;
+        }
+        .featured-products {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+        .featured-products h2 {
+            text-align: center;
+            margin-bottom: 30px;
+            font-size: 2rem;
+        }
+        .product-list {
+            display: flex;
+            gap: 30px;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+        .product-card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            padding: 20px;
+            width: 260px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .product-card img {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 6px;
+            background: #eee;
+        }
+        .product-card h3 {
+            margin: 15px 0 10px;
+            font-size: 1.2rem;
+        }
+        .product-card p {
+            margin: 0 0 15px;
+            font-size: 1rem;
+            color: #333;
+        }
+        .buy-btn {
+            background: #222;
+            color: #fff;
+            border: none;
+            padding: 10px 25px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background 0.2s;
+        }
+        .buy-btn:hover {
+            background: #ffd700;
+            color: #222;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">StyleSphere</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="dashboard.html">About</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Style Meets Comfort</h1>
+        <p>Discover the latest trends in clothing and refresh your wardrobe today!</p>
+    </section>
+
+    <section class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-list">
+            <div class="product-card">
+                <a href="cardigans.html">
+                    <img src="https://images.unsplash.com/photo-1512436991641-6745cdb1723f?auto=format&fit=crop&w=400&q=80" alt="Cardigan">
+                </a>
+                <h3><a href="cardigans.html" style="color:inherit;text-decoration:none;">Cozy Cardigan</a></h3>
+                <p>$34.99</p>
+                <button class="buy-btn" data-name="Cozy Cardigan" data-price="34.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="croptops.html">
+                    <img src="https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?auto=format&fit=crop&w=400&q=80" alt="Crop Top">
+                </a>
+                <h3><a href="croptops.html" style="color:inherit;text-decoration:none;">Trendy Crop Top</a></h3>
+                <p>$22.99</p>
+                <button class="buy-btn" data-name="Trendy Crop Top" data-price="22.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="dresses.html">
+                    <img src="https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=400&q=80" alt="Dress">
+                </a>
+                <h3><a href="dresses.html" style="color:inherit;text-decoration:none;">Elegant Dress</a></h3>
+                <p>$39.99</p>
+                <button class="buy-btn" data-name="Elegant Dress" data-price="39.99">Add to Cart</button>
+            </div>
+            <div class="product-card">
+                <a href="kurti.html">
+                    <img src="https://images.unsplash.com/photo-1469398715555-76331a5f5a9b?auto=format&fit=crop&w=400&q=80" alt="Kurti">
+                </a>
+                <h3><a href="kurti.html" style="color:inherit;text-decoration:none;">Chic Kurti</a></h3>
+                <p>$27.99</p>
+                <button class="buy-btn" data-name="Chic Kurti" data-price="27.99">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>

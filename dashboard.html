@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="cart.html">View Cart</a>
+      <a href="login.html">Login</a>
+    </nav>
+  </header>
+  <main>
+    <div class="dashboard-container">
+      <h1><span id="username"></span></h1>
+
+      <section id="profile">
+        <h2>Your Profile</h2>
+        <p>Email: <span id="userEmail"></span></p>
+        <p>Points: <span id="userPoints"></span></p>
+      </section>
+    </div>
+  </main>
+  <script>
+    // Retrieve loggedInUser from localStorage
+    const user = JSON.parse(localStorage.getItem('loggedInUser') || 'null');
+
+    // Fill in user info
+    document.getElementById('username').textContent = user && user.username ? user.username : 'User';
+    document.getElementById('userEmail').textContent = user && user.email ? user.email : '';
+    document.getElementById('userPoints').textContent = user && typeof user.points !== 'undefined' ? user.points : '0';
+  </script>
+</body>
+</html>
